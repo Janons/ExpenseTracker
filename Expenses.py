@@ -20,3 +20,10 @@ class EXPENSES(QWidget):
         QWidget.__init__(self)
         self.items = 0
         self.setObjectName("Expenses")
+
+        #expenses database file
+        EXPENSE_DATABASE_FILE = 'Expenses.db'
+
+        #SQlite Connection
+        self.connection = sqlite3.connect(EXPENSE_DATABASE_FILE)
+        self.cursor = self.connection.cursor()
