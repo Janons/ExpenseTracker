@@ -17,7 +17,7 @@ from tkinter import messagebox
 
 class EXPENSES(QWidget):
     def __init__(self):
-        QWidget.__init__(self)
+        super.__init__(self)
         self.items = 0
         self.setObjectName("Expenses")
 
